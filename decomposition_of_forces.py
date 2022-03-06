@@ -33,8 +33,7 @@ Forcey = []
 i = 0
 Frx = 0
 Fry = 0
-print(
-    "decomposition of forces\nplease add the necessary forces(F) and angles(° counted from the positive y axis to the right)\nTo get your end result type end")
+print("decomposition of forces\nplease add the necessary forces(F) and angles(° counted from the positive y axis to the right)\nTo get your end result type end")
 # main loop for the input.
 while (1 == 1):
     end = inputdeguF("F" + str(i + 1) + " = ", Force)
@@ -51,18 +50,11 @@ while (1 == 1):
 # calculation of frx/fry and end
 i = 0
 while i < len(Forcex):
-    # check if x/y is in the negative or positive area. same in 57/63/65
-    if int(degre[i]) > 0 & int(degre[i]) < 180:
-        Frx += Forcex[i]
-    elif int(degre[i]) < 0 & int(degre[i]) > 180:
-        Frx -= Forcex[i]
+    Frx += Forcex[i]
     i += 1
 print("Frx = " + str(Frx))
 i = 0
 while i < len(Forcey):
-    if int(degre[i]) > 90 & int(degre[i]) < 270:
-        Fry += Forcey[i]
-    elif int(degre[i]) < 90 & int(degre[i]) > 270:
-        Frx -= Forcey[i]
+    Fry += Forcey[i]
     i += 1
 print("Fry = " + str(Fry))
